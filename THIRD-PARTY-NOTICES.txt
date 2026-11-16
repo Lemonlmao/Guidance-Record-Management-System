@@ -1,0 +1,12 @@
+GuidanceDesk includes H2 Database Engine 2.5.252.
+
+Project: https://github.com/h2database/h2database
+Release: https://github.com/h2database/h2database/releases/tag/version-2.5.252
+Artifact: https://repo.maven.apache.org/maven2/com/h2database/h2/2.5.252/h2-2.5.252.jar
+Verified artifact SHA-256: 90b11dc413da82070ef15fc943282c1408e6ffd34fa68998335fea8603b5ff20
+
+H2 is dual-licensed under the Mozilla Public License 2.0 and the
+Eclipse Public License 1.0. Its original license text is included in
+lib/H2-LICENSE.txt.
+
+Java runtime and browser software are not redistributed with this project.

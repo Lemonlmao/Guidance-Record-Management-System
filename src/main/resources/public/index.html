@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#153e36">
+  <title>GuidanceDesk · Guidance Record Management</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body class="workspace-locked">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div id="sidebar-shade"></div>
+  <aside class="sidebar" aria-label="Main navigation" hidden>
+    <a class="brand" href="#overview" aria-label="GuidanceDesk home">
+      <span class="brand-symbol"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 23V13m0 4C5 18 3 11 5 6c6-1 10 3 9 11Zm0-3c-1-7 4-11 10-10 1 6-2 11-10 10Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>GuidanceDesk<span class="brand-caption">A little guidance. A brighter path.</span></span>
+    </a>
+    <div class="workspace-label">YOUR WORKSPACE</div>
+    <nav id="navigation">
+      <a href="#overview" data-nav="overview"><span data-icon="grid"></span>Overview</a>
+      <a href="#records" data-nav="records"><span data-icon="folder"></span>Guidance records<span class="nav-count" id="record-count">0</span></a>
+      <a href="#students" data-nav="students"><span data-icon="users"></span>Students</a>
+      <a href="#appointments" data-nav="appointments"><span data-icon="calendar"></span>Appointments</a>
+      <a href="#reports" data-nav="reports"><span data-icon="chart"></span>Reports</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-message"><span data-icon="sprout"></span><strong>Room to grow.</strong><p>Small conversations can make a lasting difference.</p></div>
+      <a href="#settings" data-nav="settings" class="settings-link"><span data-icon="settings"></span>Workspace settings</a>
+      <div class="local-indicator"><span></span>Running on this computer</div>
+      <button class="user-block" data-action="settings"><span class="avatar" id="user-initials">JM</span><span><strong id="user-name">Counselor</strong><small>Guidance counselor</small></span><span data-icon="chevron-right"></span></button>
+    </div>
+  </aside>
+  <div class="app-shell" hidden>
+    <header class="topbar">
+      <button class="icon-button mobile-menu" data-action="menu" aria-label="Open navigation"><span data-icon="menu"></span></button>
+      <div class="breadcrumb"><span id="workspace-name">Guidance Office</span><span class="slash">/</span><strong id="page-name">Overview</strong></div>
+      <div class="topbar-right">
+        <div class="global-search"><span data-icon="search"></span><input id="global-search" type="search" autocomplete="off" placeholder="Search anything…" aria-label="Search students and records" aria-expanded="false" aria-controls="global-results"><kbd>/</kbd><div id="global-results" class="search-results" hidden></div></div>
+        <button class="icon-button notification" data-action="due" title="View follow-ups due" aria-label="View follow-ups due"><span data-icon="bell"></span><i id="notification-dot" hidden></i></button>
+        <button class="sign-out-button" data-action="sign-out" aria-label="Sign out">Sign out</button>
+        <div class="school-badge"><span data-icon="school"></span><span id="school-name">Westbridge Academy</span></div>
+      </div>
+    </header>
+    <main id="content" tabindex="-1"><div class="loading-state"><span class="spinner"></span>Opening your workspace…</div></main>
+    <footer class="app-footer"><span>Guidance Record Management System</span><span id="footer-year"></span></footer>
+  </div>
+  <div id="overlay-root"></div>
+  <div id="auth-root"><div class="loading-state"><span class="spinner"></span>Opening your workspace…</div></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
